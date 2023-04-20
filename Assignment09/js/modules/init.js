@@ -19,6 +19,6 @@ xhr.onreadystatechange = () => {
         }
     }
 }
-xhr.open('GET', 'data/employees.json')      //open the connection
+xhr.open('GET', '/data/employees.json')      //open the connection
 xhr.send()                                   //initate 
 xhr.onerror = (e) => {console.log(e.message)}

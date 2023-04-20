@@ -6,7 +6,7 @@ let empTable    = document.querySelector('#employees')
 let empCount    = document.querySelector('#empCount')
 
 // BUILD THE EMPLOYEES TABLE WHEN THE PAGE LOADS
-buildGrid(arrEmployees)
+buildGrid()
 
 // DELETE EMPLOYEE
 empTable.addEventListener('click', (e) => {
