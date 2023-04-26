@@ -62,4 +62,3 @@ fetch('/data/employees.json')
 })
 .catch(e => console.log(e.message))
 
-init()
