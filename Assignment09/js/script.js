@@ -1,5 +1,5 @@
 // CREATE AN ARRAY OF EMPLOYEES
-import employees from '../modules/init.js'
+import * as employees from './modules/init.js'
 
 // GET DOM ELEMENTS
 let empTable    = document.querySelector('#employees')
