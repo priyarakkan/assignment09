@@ -26,7 +26,7 @@
 fetch('/data/employees.json')
 .then(response => response.json())
 .then(data => {
-    for (let employee of employees) {
+    for (let employee of data.employees) {
                     tbody.innerHTML += 
                     `
                     <tr>
