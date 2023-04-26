@@ -22,7 +22,19 @@
 // xhr.open('GET', '/data/employees.json')      //open the connection
 // xhr.send()                                   //initate 
 // xhr.onerror = (e) => {console.log(e.message)}
-
+function init() {
+    //display command menu
+    console.log('THE EMPLOYEE MANAGEMENT APPLICATION')
+    console.log('----------------------------------')
+    console.log('COMMAND MENU')
+    console.log('view - Show all employees')
+    console.log('add - Add an employee')
+    console.log('delete - Delete an employee')
+    console.log('exit - Exit the application')
+    console.log('----------------------------')
+    console.log('')
+    // START WITH AN EMPTY ARRAY
+    let arrEmployees = []
 fetch('/data/employees.json')
 .then(response => response.json())
 .then(data => {
@@ -61,4 +73,5 @@ fetch('/data/employees.json')
     console.log('The application has terminated')
 })
 .catch(e => console.log(e.message))
+}
 
